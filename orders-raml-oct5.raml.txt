@@ -1,0 +1,94 @@
+#%RAML 1.0
+title: E-Commerce Orders API
+version: v1
+baseUri: https://api.store.com/{version}
+mediaType: application/json
+
+types:
+  OrderItem:
+    type: object
+    properties:
+      productId: string
+      quantity: integer
+      unitPrice: number
+
+  OrderStatus:
+    type: string
+    enum: [pending, processing, shipped, delivered, cancelled]
+
+  Order:
+    type: object
+    properties:
+      id?: string
+      customerEmail: string
+      items: OrderItem[]
+      status?: OrderStatus
+      totalAmount?: number
+      createdAt?: datetime
+
+  OrderUpdate:
+    type: object
+    properties:
+      status?: OrderStatus
+      items?: OrderItem[]
+
+  Error:
+    type: object
+    properties:
+      message: string
+
+/orders:
+  get:
+    description: Retrieve a paginated list of orders
+    queryParameters:
+      status?: OrderStatus
+      limit?:
+        type: integer
+        default: 10
+        minimum: 1
+      offset?:
+        type: integer
+        default: 0
+        minimum: 0
+    responses:
+      200:
+        body:
+          type: object
+          properties:
+            data: Order[]
+            total: integer
+
+  post:
+    description: Create a new order
+    body:
+      type: Order
+    responses:
+      201:
+        body: Order
+
+  /{orderId}:
+    uriParameters:
+      orderId: string
+    get:
+      description: Get details of a specific order
+      responses:
+        200:
+          body: Order
+        404:
+          body: Error
+
+    patch:
+      description: Update an existing order
+      body: OrderUpdate
+      responses:
+        200:
+          body: Order
+        404:
+          body: Error
+
+    delete:
+      description: Cancel/delete an order
+      responses:
+        204:
+        404:
+          body: Error
