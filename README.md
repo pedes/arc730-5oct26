@@ -20,6 +20,12 @@ Integration Architect Certification Details
 - https://help.salesforce.com/s/articleView?id=005298957&type=1
 - https://trailheadacademy.salesforce.com/certificate/exam-mule-int-arch---Mule-Arch-202
 
+
+AsyncAPIs
+- https://gist.github.com/pedes/416c110df0cf613d555c698a9a2c362c
+
+- https://gist.github.com/pedes/6e1fff9c23ebf07766e51470f6e0a989
+
 Command API Governance
 
  anypoint-cli-v4 governance:api:validate
