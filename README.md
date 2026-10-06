@@ -4,6 +4,9 @@ Assets produced during the class and materials
 REST APIs Best Practices
 - https://schweizerischebundesbahnen.github.io/api-principles/restful/best-practices/
 
+ADR Template
+- https://gist.github.com/pedes/d5f0a6d12728e0399b4b90fbfdcd60fd
+
 Command API Governance
 
  anypoint-cli-v4 governance:api:validate
