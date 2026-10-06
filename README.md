@@ -1,6 +1,9 @@
 # arc730-5oct26
 Assets produced during the class and materials
 
+REST APIs Best Practices
+- https://schweizerischebundesbahnen.github.io/api-principles/restful/best-practices/
+
 Command API Governance
 
  anypoint-cli-v4 governance:api:validate
