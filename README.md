@@ -7,6 +7,9 @@ REST APIs Best Practices
 ADR Template
 - https://gist.github.com/pedes/d5f0a6d12728e0399b4b90fbfdcd60fd
 
+Get Your Anypoint Account Summary with Entitlements
+https://anypoint.mulesoft.com/accounts/api/me
+
 Command API Governance
 
  anypoint-cli-v4 governance:api:validate
