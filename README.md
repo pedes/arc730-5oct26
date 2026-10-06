@@ -8,7 +8,17 @@ ADR Template
 - https://gist.github.com/pedes/d5f0a6d12728e0399b4b90fbfdcd60fd
 
 Get Your Anypoint Account Summary with Entitlements
-https://anypoint.mulesoft.com/accounts/api/me
+- https://anypoint.mulesoft.com/accounts/api/me
+
+Anypoint Exchange Limits
+- https://docs.mulesoft.com/exchange/asset-versions
+
+Diagrams as Code (MermaidJS Tool)
+- https://mermaid.js.org/syntax/c4.html
+
+Integration Architect Certification Details
+- https://help.salesforce.com/s/articleView?id=005298957&type=1
+- https://trailheadacademy.salesforce.com/certificate/exam-mule-int-arch---Mule-Arch-202
 
 Command API Governance
 
